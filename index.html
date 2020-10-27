@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>2048</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <!-- TODO (optional): Add link to bulma here -->
+        <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"></link>
+        <link rel="stylesheet" href="custom_stylesheet.css" />
+    </head>
+
+    <body>
+        <section class="section">
+          <div id="root">
+            <div class="container">
+              <div>
+                <h1 class="title is-1">2048</h1>
+                <p><strong>HOW TO PLAY:</strong> Use your arrow keys to move the tiles. Tiles with the same number merge into one when they touch. Add them up to reach 2048!</p>
+              </div>
+              <br>
+              <div>
+                <h2 id="won"></h2>
+              </div>
+              <div>
+                <h2 id="over"></h2>
+              </div>
+              <div>
+                <h3 id="score"></h3>
+              </div>
+              <table class="table is-bordered">
+                <tbody>
+                  <tr>
+                    <td id="0"></td>
+                    <td id="1"></td>
+                    <td id="2"></td>
+                    <td id="3"></td>
+                  </tr>
+                  <tr>
+                    <td id="4"></td>
+                    <td id="5"></td>
+                    <td id="6"></td>
+                    <td id="7"></td>
+                  </tr>
+                  <tr>
+                    <td id="8"></td>
+                    <td id="9"></td>
+                    <td id="10"></td>
+                    <td id="11"></td>
+                  </tr>
+                  <tr>
+                    <td id="12"></td>
+                    <td id="13"></td>
+                    <td id="14"></td>
+                    <td id="15"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <form>
+                <button id="resetButton" type="button" class="button">Reset</button>
+              </form>
+            </div>
+          </div>
+        </section>        
+
+        <!-- Include links to JavaScript files below -->
+        <!-- TODO: Add link to jQuery here -->
+        <script src="engine/game.js" type="module"></script>
+        <script src="render.js" type="module"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+    </body>
+</html>

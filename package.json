@@ -1,0 +1,23 @@
+{
+  "name": "a07",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "console": "node -r esm run_in_console.js",
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "bulma": "^0.9.1",
+    "esm": "^3.2.25",
+    "jquery": "^3.5.1",
+    "keypress": "^0.2.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "description": ""
+}
